@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-around mb-5 bg-black">
+<div class=" row container-fluid m-lg-5 row-cols-3 rounded-sm text-center">
+  <div *ngFor="let user of users" class="  col mt-3">
+      <div class=" rounded-sm mt-2">
+          <img src="{{user.avatar}}" class=" card-body">
+
+          <div class="card-body">
+              <h2 class="fw-bold text-light">
+                  {{user.first_name}} {{user.last_name}}<br>
+              </h2>
+              <small class=" text-muted">
+                  {{user.email}}
+              </small>
+          </div>
+      </div>
+  </div>
+</div>
+</div>

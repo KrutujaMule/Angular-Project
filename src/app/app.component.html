@@ -1,0 +1,13 @@
+<nav class="navbar text-light bg-dark">
+  <div class="container-fluid">
+      <a routerLink="/" *ngIf="Uname == 'Explore'" class="navbar-brand text-light">Home</a>
+      <a routerLink="/dashboard" *ngIf="Uname != 'Explore'" class="navbar-brand">Dashboard</a>
+      <h3>Welcome to {{Uname}}</h3>
+      <div class="d-flex" >
+
+          <a routerLink="/create" *ngIf="Uname != 'Explore'"class=" create btn btn-sm  btn-light text-dark" data-toggle="button">Create User</a>
+          <button *ngIf="Uname != ''" routerLink="/" (click)="logout()" class="btn logout btn-sm  btn-light text-dark"data-toggle="button">Logout</button>
+      </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

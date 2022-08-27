@@ -1,0 +1,38 @@
+<section class="d-flex sectionHeight bg-info">
+<div class=" container-lg bg-black py-md-5 "><div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-xl-4">
+        <div class="card bg-dark text-light">
+          <div class="card-body p-4">
+            <h2 class="fw-bold mb-5">LOGIN</h2>
+
+            <form #userForm="ngForm">
+            <div class="form-outline form-white mb-4">
+<!-- {{userForm.value|json}} -->
+<!-- <hr> -->
+<!-- {{loginModel |json}} -->
+              <input type="username" required #username="ngModel" class="form-control form-control-md" placeholder="Username" required name="username" [class.is-invalid]="username.invalid && username.touched" [(ngModel)]="loginModel.username" />
+              <small class="text-danger" [class.d-none]="username.valid || username.untouched">Username is required</small>
+
+            </div>
+            <div class="form-outline form-white mb-5">
+
+              <input type="password" required #pass="ngModel" [class.is-invalid]="pass.invalid && pass.touched" class="form-control form-control-md"  name="pass" placeholder="Password"  [(ngModel)]="loginModel.pass" />
+              <small class="text-danger" [class.d-none]="pass.valid || pass.untouched">Password is required</small>
+            </div>
+
+            <button [disabled]="userForm.form.invalid" class="btn text-dark fw-bold btn-md btn-light px-5 mb-3" (click)="login(username.value, pass.value)">
+              Login
+            </button>
+            <div class="text-center">
+              <p>New User? <a routerLink="/register">Register</a></p>
+
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

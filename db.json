@@ -1,0 +1,58 @@
+{
+  "newUsers": [
+    {
+      "id": 0,
+      "firstname": "Alex",
+      "middlename":"James",
+      "lastname": "Dux",
+      "email": "alexd1@gmail.com",
+      "phone": "9098654432",
+      "dob": "1999-07-27"
+    },
+    {
+      "id": 1,
+      "firstname": "Krutuja",
+      "middlename": "Rajkumar",
+      "lastname": "Mule",
+      "email": "mulekrutuja@gmail.com",
+      "phone": " 7387871522",
+      "dob": "2000-03-31"
+    },
+    {
+      "id": 2,
+      "firstname": "Harry",
+      "middlename": "James",
+      "lastname": "Potter",
+      "email": "potterh@gmail.com",
+      "phone": " 7386541522",
+      "dob": "1899-01-31"
+    },
+    {
+    "id": 3,
+    "firstname": "Herminone",
+    "middlename": "Jean",
+    "lastname": "Granger",
+    "email": "grangerher@gmail.com",
+    "phone": " 9871871522",
+    "dob": "1990-03-21"
+    },
+    {
+      "id": 4,
+      "firstname": "Dobby",
+      "middlename": "Kreacher",
+      "lastname": "Jones",
+      "email": "dobbyjon@gmail.com",
+      "phone": " 900876522",
+      "dob": "1879-05-11"
+    },
+    {
+      "id": 5,
+      "firstname": "Draco",
+      "middlename": "Lucius",
+      "lastname": "Malfoy",
+      "email": "dracomalfoy31@gmail.com",
+      "phone": " 921376522",
+      "dob": "1879-05-11"
+    }
+  ]
+}
